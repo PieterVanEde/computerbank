@@ -19,6 +19,15 @@ xfdesktop --quit
 sleep 10
 xfdesktop
 
-rm -f ~/.config/autostart/arrange.desktop
+arrangeAutostarter="~/.config/autostart/arrange.desktop"
+while [ -f $arrangeAutostarter ]
+do
+	rm -f $arrangeAutostarter
+	echo "pieter" >> autoStartDeleter
+	sleep 5
+	
+done
+
+
 
 
