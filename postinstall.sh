@@ -89,8 +89,12 @@ sudo apt-get update && sudo apt-get install spotify-client -y
 
 sudo apt install steam kapman granatier kbounce kbreakout ksnakeduel knights kfourinline kigo kpat gcompris-qt ktuberling -y
 
-# Misc packages
+#### Misc packages
 sudo apt install gnucash -y
+
+# Teamviewer
+wget "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
+sudo apt install ./teamviewer_amd64.deb -y
 
 #### Enable automatic updates
 sudo mintupdate-automation upgrade enable
