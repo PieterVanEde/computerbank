@@ -32,25 +32,6 @@ sudo apt update
 sudo apt install snapd
 sudo snap install bluemail
 
-#### Chat clients
-
-# Telegram
-flatpak install flathub org.telegram.desktop -y
-
-# WhatsApp
-flatpak install flathub com.ktechpit.whatsie -y
-
-# Teams
-flatpak install flathub com.github.IsmaelMartinez.teams_for_linux  -y
-
-# Zoom
-wget https://zoom.us/client/6.2.6.2503/zoom_amd64.deb
-sudo apt install ./zoom_amd64.deb -y
-
-# Discord
-wget -O discord.deb "https://discord.com/api/download?platform=linux&format=deb"
-sudo apt install ./discord.deb #TODO error
-
 #### Online file storage
 
 # TODO do not appear at the moment
@@ -88,6 +69,25 @@ sudo apt-get update && sudo apt-get install spotify-client -y
 #### Games
 
 sudo apt install steam kapman granatier kbounce kbreakout ksnakeduel knights kfourinline kigo kpat gcompris-qt ktuberling -y
+
+#### Chat clients
+
+# Telegram
+flatpak install flathub org.telegram.desktop -y
+
+# WhatsApp
+flatpak install flathub com.ktechpit.whatsie -y
+
+# Teams
+flatpak install flathub com.github.IsmaelMartinez.teams_for_linux  -y
+
+# Zoom
+wget https://zoom.us/client/6.2.6.2503/zoom_amd64.deb
+sudo apt install ./zoom_amd64.deb -y
+
+# Discord
+wget -O discord.deb "https://discord.com/api/download?platform=linux&format=deb"
+sudo apt install ./discord.deb
 
 #### Misc packages
 sudo apt install gnucash -y
