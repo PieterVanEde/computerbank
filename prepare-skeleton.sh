@@ -41,6 +41,7 @@ sudo cp $regularAppsDir/spotify.desktop $skeletonPath
 sudo cp $regularAppsDir/steam.desktop $skeletonPath
 
 sudo cp $regularAppsDir/mintinstall.desktop $skeletonPath
+sudo cp $regularAppsDir/mintwelcome.desktop $skeletonPath
 sudo cp $regularAppsDir/nm-connection-editor.desktop $skeletonPath
 
 # Prepare script that adjusts icon positions on first start

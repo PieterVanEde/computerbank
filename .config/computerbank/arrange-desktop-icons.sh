@@ -20,12 +20,11 @@ sleep 10
 xfdesktop
 
 arrangeAutostarter="~/.config/autostart/arrange.desktop"
-while [ -f $arrangeAutostarter ]
+while [ -f "$arrangeAutostarter" ]
 do
 	rm -f $arrangeAutostarter
-	echo "pieter" >> autoStartDeleter
+	echo "pieter" >> ~/autoStartDeleter
 	sleep 5
-	
 done
 
 

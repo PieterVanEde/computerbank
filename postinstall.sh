@@ -4,6 +4,20 @@
 
 # Don't forget to check for non-free drivers manually
 
+####
+# We start with flatpak installs, as they have the tendency to fail randomly on errors about which user is executing the installs.
+
+# Telegram
+flatpak install flathub org.telegram.desktop -y
+
+# WhatsApp
+flatpak install flathub com.ktechpit.whatsie -y
+
+# Teams
+flatpak install flathub com.github.IsmaelMartinez.teams_for_linux  -y
+
+#### General
+
 # General update
 sudo apt update
 sudo apt upgrade -y
@@ -71,15 +85,6 @@ sudo apt-get update && sudo apt-get install spotify-client -y
 sudo apt install steam kapman granatier kbounce kbreakout ksnakeduel knights kfourinline kigo kpat gcompris-qt ktuberling -y
 
 #### Chat clients
-
-# Telegram
-flatpak install flathub org.telegram.desktop -y
-
-# WhatsApp
-flatpak install flathub com.ktechpit.whatsie -y
-
-# Teams
-flatpak install flathub com.github.IsmaelMartinez.teams_for_linux  -y
 
 # Zoom
 wget https://zoom.us/client/6.2.6.2503/zoom_amd64.deb
